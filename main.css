@@ -55,7 +55,7 @@ section, footer, body > header{
   background-size: cover;
   border-radius: 20px;
   width: 100%;
-  height: 120px;
+  height: 250px;
   position: relative;
   overflow: hidden;
 }
@@ -176,8 +176,8 @@ section{
 #about .photo{
   width: 100%;
   height: 100%;
-  background-image: url(./images/me-photo.png);
-  background-position: center;
+  background-image: url(./images/me.png);
+  background-position: bottom;
   background-size: cover;
   background-color: var(--color-purple);
 }
@@ -202,7 +202,7 @@ section{
 }
 #portfolio .jobs{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 #portfolio .jobs > div{
