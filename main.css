@@ -51,7 +51,7 @@ section, footer, body > header{
 }
 .gallery li .image{
   background-image: var(--gallery-image);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   border-radius: 20px;
   width: 100%;
@@ -89,6 +89,11 @@ header{
   display: flex;
   width: 100%;
 }
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 body > header .container{
   width: 100%;
 }
@@ -100,10 +105,10 @@ body > header .container > div{
   width: 100%;
   padding: 20px;
   background-color: var(--color-b-medium);
+  box-shadow: 0px 0px 26px 0px #00000078;
 }
 header h1{
   font-size: 20px;  
-
 }
 body > header b{
   color: var(--color-font-medium);
@@ -263,9 +268,13 @@ section{
   height: 60px;
 }
 #contact .midia li a{
-  padding: 10px;
-  background-color: rgba(255,255,255, 0.1);
-  border-radius: 100px;
+  padding: 15px;
+  background-color: var(--color-b-medium);
+  border-radius: 20px;
+  transition: background .3s ease;
+}
+#contact .midia li a:hover{
+  background-color: var(--color-font-medium);
 }
 #contact .midia ul img{
   object-fit: cover;
@@ -362,6 +371,10 @@ footer a{
   #contact h2{
     grid-column: 1;
     grid-row: 1;
+  }
+
+  .gallery li .image{
+    height: 150px;
   }
 }  
   
